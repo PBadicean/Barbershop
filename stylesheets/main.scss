@@ -1,0 +1,11 @@
+@import "modules/all";
+@import "partials/buttons";
+@import "partials/decoration";
+@import "partials/grids";
+@import "partials/typography";
+
+p {
+  span {
+    background-color: yellow;
+  }
+}
