@@ -1,13 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Borodinsky</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Borodinsky</title>
+  <link rel="stylesheet" href="stylesheets/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="app-navigation">
+        <li><a href="#">информация</a></li>
+        <li><a href="#">новости</a></li>
+        <li><a href="price.html">прайс-лист</a></li>
+        <li><a href="catalog.html">магазин</a></li>
+        <li><a href="#">контакты</a></li>
+      </ul>
+
+      <ul class="user-navigation">
+        <li><a href="#">войти</a></li>
+      </ul>
+
+      <a><img src="#" alt="Логотип барбершопа «Бородинский»"></a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>магазин "Barbershop"</h1>
+
+    <section>
+      <h2>Наши преимущества</h2>
+
+      <ul>
+        <li>
+          <h3>быстро</h3>
+          <p>
+            мы делаем свою работу быстро!
+            два часа пролетят незаметно и вы счастливый
+            обладатель стильной стрижки-минутки!
+          </p>
+        </li>
+        <li>
+          <h3>круто</h3>
+          <p>
+            забудьте, как вы стриглись раньше.
+            мы сделаем из вас звезду футбола или кино!
+            во всяком случаем внешне.
+          </p>
+        </li>
+        <li>
+          <h3>дорого</h3>
+          <p>
+            наши мастера - профессионалы своего дела и
+            не могут стоить дешево, к тому же, разве цена
+            не дает определенный статус?
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>новости</h2>
+
+      <ul>
+        <li>
+          <p>
+            нам наконец завезли ягемастер теперь вы можете
+            пропустить стаканчик во время стрижки
+          </p>
+          <time datetime="2008-02-14 20:00">11 января</time>
+        </li>
+        <li>
+          <p>
+            в нашей команде пополнение, Борис «Бритва» Стригунец,
+            обладатель множества титулов и наград пополнил наши
+            стройные ряды
+          </p>
+          <time datetime="2008-02-14 20:00">18 января</time>
+        </li>
+      </ul>
+      <a href="#">все новости</a>
+    </section>
+
+    <section>
+      <h2>фотогалерея</h2>
+      <figure><a href="#"><img src="#" alt="интерьер"></a></figure>
+      <button type="button">назад</button>
+      <button type="button">вперед</button>
+    </section>
+
+    <section>
+      <h2>контактная информация</h2>
       <p>
-        <span>Polina llalalal</span>
+        барбершоп «бородинский»<br>
+        адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+        телефон: +7 (495) 666-02-66
       </p>
-  </body>
+
+      <p>
+        время работы:<br>
+        пн-пт: с 10:00 до 22:00<br>
+        сб-вс: с 10:00 до 19:00
+      </p>
+
+      <a href="#">как проехать</a>
+      <a href="#">обратная связь</a>
+    </section>
+
+    <section>
+      <h2>записаться</h2>
+
+      <p>
+        укажите желаемую дату и время и мы свяжемся
+        с вами для подтверждения брони
+      </p>
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="date-field">дата</label>
+          <input type="text" name="date" id="date-field" placeholder="08.10.2017">
+        </p>
+        <p>
+          <label for="time-field">время</label>
+          <input type="text" name="time" id="time-field" placeholder="10:00">
+        </p>
+        <p>
+          <label for="name-field">имя</label>
+          <input type="text" name="name" id="name-field" placeholder="Борода">
+        </p>
+        <p>
+          <label for="phone-field">телефон</label>
+          <input type="tel" name="phone" id="phone-field" placeholder="+7 123 456-78-90">
+        </p>
+        <button type="submit">отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      барбершоп «бородинский»<br>
+      адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+      телефон: +7 (495) 666-02-66
+    </p>
+
+    <div>
+      <b>давайте дружить!</b>
+      <ul>
+        <li><a href="#">вконтакте</a></li>
+        <li><a href="#">фейсбук</a></li>
+        <li><a href="#">инстаграм</a></li>
+      </ul>
+    </div>
+
+    <p>
+      <b>Разработано</b>
+      <a href="https://htmlacademy.ru/">html academy</a>
+    </p>
+
+  </footer>
+
+  <section>
+    <h2>Личный кабинет</h2>
+    <p>
+      введите пожалуйста свой логин и пароль
+    </p>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="login">логин</label>
+        <input type="text" name="login" id="login" placeholder="логин">
+      </p>
+      <p>
+        <label for="password">пароль</label>
+        <input type="password" name="password" id="password" placeholder="пароль">
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="remember" checked>
+          запомнить меня
+        </label>
+        <a href="#">я забыл пароль!</a>
+      </p>
+
+      <button type="submit">войти</button>
+    </form>
+    <button type="button">закрыть</button>
+  </section>
+
+  <section>
+    <h2>Где нас найти</h2>
+    <button type="button">закрыть</button>
+  </section>
+</body>
+
 </html>
