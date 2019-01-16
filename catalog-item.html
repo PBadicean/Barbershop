@@ -5,11 +5,15 @@
   <meta charset="utf-8" />
   <title>Borodinsky</title>
   <link rel="stylesheet" href="stylesheets/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="page-header">
+    <nav class="header-navigation">
+      <a class="header-logo">
+        <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+      </a>
       <ul class="app-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">новости</a></li>
@@ -21,38 +25,39 @@
       <ul class="user-navigation">
         <li><a href="#">вход</a></li>
       </ul>
-
-      <a href="index.html"><img src="./img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
     </nav>
   </header>
-  <main>
-    <h1>Набор для путешествий «baxter of california»</h1>
 
-    <ul>
+  <main>
+    <h1 class="page-title">Набор для путешествий «baxter of california»</h1>
+
+    <ul class="breadcrumbs">
       <li><a href="index.html">главная</a></li>
       <li><a href="catalog.html">магазин</a></li>
       <li><a href="#">средства для ухода</a></li>
-      <li>Набор для путешествий «baxter of california»</li>
+      <li class="breadcrumbs-current">Набор для путешествий «baxter of california»</li>
     </ul>
 
-    <section>
-      <h2>Изображения товара</h2>
-      <p><img src="./img/product-big.jpg" width="460" height="498" alt="Фото всего набора"></p>
-      <ul>
+    <section class="img-product">
+      <h2 class="visually-hidden">Изображения товара</h2>
+      <p class="product-photo-full">
+        <img src="./img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+      </p>
+      <ul class="product-photo-preview">
         <li><img src="./img/product-small-1.jpeg" width="140" height="149" alt="Фото в анфас"></li>
         <li><img src="./img/product-small-2.jpeg" width="140" height="149" alt="Фото в профиль"></li>
         <li><img src="./img/product-small-3.jpeg" width="140" height="149" alt="Фото отдельной части"></li>
       </ul>
     </section>
 
-    <section>
-      <h2>Описание товара</h2>
-      <p>
-        <span>есть в наличии</span>
-        <span>артикул: dexter-ae</span>
+    <section class="product-info">
+      <h2 class="visually-hidden">Описание товара</h2>
+      <p class="product-description">
+        <span class="product-availability">есть в наличии</span>
+        <span class="product-article">артикул: dexter-ae</span>
       </p>
 
-      <p>
+      <p class="product-text">
         Travel kit - необходимый аксессуар во время любого
         путешествия. В аккуратной кожаной сумке находится все, что
         нужно для бритья и ухода за кожей во время рабочей поездки
@@ -61,7 +66,7 @@
         стать отличным подарком.
       </p>
 
-      <p>
+      <p class="product-price">
         <span>2 900 ₽</span>
         <a href="#">купить</a>
       </p>
@@ -78,29 +83,30 @@
 
   </main>
 
-  <footer>
-    <p>
+  <footer class="page-footer">
+    <p class="footer-contacts">
       барбершоп «бородинский»<br>
       адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+      <a href="#">Как нас найти?</a><br>
       телефон: +7 (495) 666-02-66
     </p>
 
-    <div>
+    <div class="footer-social">
       <b>давайте дружить!</b>
       <ul>
-        <li><a href="#">вконтакте</a></li>
-        <li><a href="#">фейсбук</a></li>
-        <li><a href="#">инстаграм</a></li>
+        <li><a href="#" class="social-vk">вконтакте</a></li>
+        <li><a href="#" class="social-fb">фейсбук</a></li>
+        <li><a href="#" class="social-inst">инстаграм</a></li>
       </ul>
     </div>
 
-    <p>
+    <p class="footer-copyright">
       <b>Разработано</b>
       <a href="https://htmlacademy.ru/">html academy</a>
     </p>
   </footer>
 
-  <section>
+  <section class="modal-authorization">
     <h2>Личный кабинет</h2>
     <p>
       введите пожалуйста свой логин и пароль
@@ -124,12 +130,12 @@
 
       <button type="submit">вход</button>
     </form>
-    <button type="button">закрыть</button>
+    <button type="button" class="modal-close">закрыть</button>
   </section>
 
-  <section>
-    <h2>Где нас найти</h2>
-    <button type="button">закрыть</button>
+  <section class="modal-map">
+    <h2 class="visually-hidden">Где нас найти</h2>
+    <button type="button" class="modal-close">закрыть</button>
   </section>
 </body>
 

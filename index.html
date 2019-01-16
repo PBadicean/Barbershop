@@ -6,13 +6,14 @@
   <title>Borodinsky</title>
   <link rel="stylesheet" href="stylesheets/main.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheets/vendors/_normalize.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a><img src="./img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»"></a>
+  <header class="page-header">
+    <nav class="header-navigation">
+      <a class="header-logo">
+        <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+      </a>
       <ul class="app-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">новости</a></li>
@@ -28,13 +29,13 @@
   </header>
 
   <main>
-    <h1>магазин "Barbershop"</h1>
+    <h1 class="visually-hidden">магазин "Barbershop"</h1>
 
-    <section>
-      <h2>Наши преимущества</h2>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
 
-      <ul>
-        <li>
+      <ul class="advantages-list">
+        <lic class="advantage-item">
           <h3>быстро</h3>
           <p>
             мы делаем свою работу быстро!
@@ -42,7 +43,7 @@
             обладатель стильной стрижки-минутки!
           </p>
         </li>
-        <li>
+        <li class="advantage-item">
           <h3>круто</h3>
           <p>
             забудьте, как вы стриглись раньше.
@@ -50,7 +51,7 @@
             во всяком случаем внешне.
           </p>
         </li>
-        <li>
+        <li class="advantage-item">
           <h3>дорого</h3>
           <p>
             наши мастера - профессионалы своего дела и
@@ -61,18 +62,18 @@
       </ul>
     </section>
 
-    <section>
+    <section class="news">
       <h2>новости</h2>
 
-      <ul>
-        <li>
+      <ul class="news-list">
+        <li class="news-item">
           <p>
             нам наконец завезли ягемастер теперь вы можете
             пропустить стаканчик во время стрижки
           </p>
           <time datetime="2008-02-14 20:00">11 января</time>
         </li>
-        <li>
+        <li class="news-item">
           <p>
             в нашей команде пополнение, Борис «Бритва» Стригунец,
             обладатель множества титулов и наград пополнил наши
@@ -84,35 +85,35 @@
       <a href="#">все новости</a>
     </section>
 
-    <section>
+    <section class="photogallery">
       <h2>фотогалерея</h2>
       <figure><a href="#"><img src="./img/salon-room.jpg" width="286" height="164" alt="интерьер"></a></figure>
-      <button type="button">назад</button>
-      <button type="button">вперед</button>
+      <button class="photogallery-button-back" type="button">назад</button>
+      <button class="photogallery-button-next" type="button">вперед</button>
     </section>
 
-    <section>
+    <section class="contacts">
       <h2>контактная информация</h2>
-      <p>
+      <p class="contacts-info">
         барбершоп «бородинский»<br>
         адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
         телефон: +7 (495) 666-02-66
       </p>
 
-      <p>
+      <p class="working-hours">
         время работы:<br>
         пн-пт: с 10:00 до 22:00<br>
         сб-вс: с 10:00 до 19:00
       </p>
 
-      <a href="#">как проехать</a>
-      <a href="#">обратная связь</a>
+      <a href="#" class="address-map">как проехать</a>
+      <a href="#" class="feedback">обратная связь</a>
     </section>
 
-    <section>
+    <section class="appointment">
       <h2>записаться</h2>
 
-      <p>
+      <p class="appointment-info">
         укажите желаемую дату и время и мы свяжемся
         с вами для подтверждения брони
       </p>
@@ -139,31 +140,30 @@
     </section>
   </main>
 
-  <footer>
-    <p>
+  <footer class="page-footer">
+    <p class="footer-contacts">
       барбершоп «бородинский»<br>
       адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
       <a href="#">Как нас найти?</a><br>
       телефон: +7 (495) 666-02-66
     </p>
 
-    <div>
+    <div class="footer-social">
       <b>давайте дружить!</b>
       <ul>
-        <li><a href="#">вконтакте</a></li>
-        <li><a href="#">фейсбук</a></li>
-        <li><a href="#">инстаграм</a></li>
+        <li><a href="#" class="social-vk">вконтакте</a></li>
+        <li><a href="#" class="social-fb">фейсбук</a></li>
+        <li><a href="#" class="social-inst">инстаграм</a></li>
       </ul>
     </div>
 
-    <p>
+    <p class="footer-copyright">
       <b>Разработано</b>
       <a href="https://htmlacademy.ru/">html academy</a>
     </p>
-
   </footer>
 
-  <section>
+  <section class="modal-authorization">
     <h2>Личный кабинет</h2>
     <p>
       введите пожалуйста свой логин и пароль
@@ -187,12 +187,12 @@
 
       <button type="submit">вход</button>
     </form>
-    <button type="button">закрыть</button>
+    <button type="button" class="modal-close">закрыть</button>
   </section>
 
-  <section>
-    <h2>Где нас найти</h2>
-    <button type="button">закрыть</button>
+  <section class="modal-map">
+    <h2 class="visually-hidden">Где нас найти</h2>
+    <button type="button" class="modal-close">закрыть</button>
   </section>
 </body>
 
