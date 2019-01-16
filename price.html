@@ -5,11 +5,15 @@
   <meta charset="utf-8" />
   <title>Borodinsky</title>
   <link rel="stylesheet" href="stylesheets/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="page-header">
+    <nav class="header-navigation">
+      <a class="header-logo">
+        <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+      </a>
       <ul class="app-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">новости</a></li>
@@ -21,29 +25,28 @@
       <ul class="user-navigation">
         <li><a href="#">вход</a></li>
       </ul>
-
-      <a href="index.html"><img src="./img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»"></a>
     </nav>
   </header>
 
   <main>
-    <h1>Прайс-лист</h1>
-    <ul>
+    <h1 class="page-title">Прайс-лист</h1>
+    <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
-      <li>Прайс-лист</li>
+      <li class="breadcrumbs-current">Прайс-лист</li>
     </ul>
 
-    <p>Истинно мужская классика</p>
-    <section>
+    <p class="promo-title">Истинно мужская классика</p>
+    <section class="usage-funds">
       <h2>мы используем только лучшие средства:</h2>
-      <ul>
+      <ul class="list-funds">
         <li>baxter of california</li>
         <li>mr natty</li>
         <li>suavecito</li>
         <li>malin+goetz</li>
       </ul>
     </section>
-    <section>
+
+    <section class="price-services">
       <h2>цены на услуги наших мастеров:</h2>
       <table>
         <tr>
@@ -61,7 +64,7 @@
       </table>
     </section>
 
-    <section>
+    <section class="about-us">
       <h2>Несколько слов о нас:</h2>
       <p>
         Наша парикмахерская занимается исключительно мужскими
@@ -79,30 +82,30 @@
 
   </main>
 
-  <footer>
-    <p>
+  <footer class="page-footer">
+    <p class="footer-contacts">
       барбершоп «бородинский»<br>
       адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+      <a href="#">Как нас найти?</a><br>
       телефон: +7 (495) 666-02-66
     </p>
 
-    <div>
+    <div class="footer-social">
       <b>давайте дружить!</b>
       <ul>
-        <li><a href="#">вконтакте</a></li>
-        <li><a href="#">фейсбук</a></li>
-        <li><a href="#">инстаграм</a></li>
+        <li><a href="#" class="social-vk">вконтакте</a></li>
+        <li><a href="#" class="social-fb">фейсбук</a></li>
+        <li><a href="#" class="social-inst">инстаграм</a></li>
       </ul>
     </div>
 
-    <p>
+    <p class="footer-copyright">
       <b>Разработано</b>
       <a href="https://htmlacademy.ru/">html academy</a>
     </p>
-
   </footer>
 
-  <section>
+  <section class="modal-authorization">
     <h2>Личный кабинет</h2>
     <p>
       введите пожалуйста свой логин и пароль
@@ -126,12 +129,12 @@
 
       <button type="submit">вход</button>
     </form>
-    <button type="button">закрыть</button>
+    <button type="button" class="modal-close">закрыть</button>
   </section>
 
-  <section>
-    <h2>Где нас найти</h2>
-    <button type="button">закрыть</button>
+  <section class="modal-map">
+    <h2 class="visually-hidden">Где нас найти</h2>
+    <button type="button" class="modal-close">закрыть</button>
   </section>
 </body>
 
