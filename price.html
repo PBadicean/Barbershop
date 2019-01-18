@@ -11,13 +11,13 @@
 <body>
   <header class="page-header">
     <nav class="header-navigation">
-      <a class="header-logo">
+      <a href="index.html" class="header-logo">
         <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
       </a>
       <ul class="app-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">новости</a></li>
-        <li><a href="price.html">прайс-лист</a></li>
+        <li><a href="#">прайс-лист</a></li>
         <li><a href="catalog.html">магазин</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
@@ -36,9 +36,9 @@
     </ul>
 
     <p class="promo-title">Истинно мужская классика</p>
-    <section class="usage-funds">
+    <section class="hair-products">
       <h2>мы используем только лучшие средства:</h2>
-      <ul class="list-funds">
+      <ul class="hair-products-list">
         <li>baxter of california</li>
         <li>mr natty</li>
         <li>suavecito</li>
@@ -92,7 +92,7 @@
 
     <div class="footer-social">
       <b>давайте дружить!</b>
-      <ul>
+      <ul class="social-list">
         <li><a href="#" class="social-vk">вконтакте</a></li>
         <li><a href="#" class="social-fb">фейсбук</a></li>
         <li><a href="#" class="social-inst">инстаграм</a></li>
@@ -105,36 +105,40 @@
     </p>
   </footer>
 
-  <section class="modal-authorization">
+  <section class="modal modal-authorization">
     <h2>Личный кабинет</h2>
-    <p>
+    <p class="login-info">
       введите пожалуйста свой логин и пароль
     </p>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="login">логин</label>
-        <input type="text" name="login" id="login" placeholder="логин">
+        <label class="visually-hidden" for="login">логин</label>
+        <input class="login-icon-user"type="text"
+                name="login" id="login" placeholder="логин">
       </p>
       <p>
-        <label for="password">пароль</label>
-        <input type="password" name="password" id="password" placeholder="пароль">
+        <label class="visually-hidden" for="password">пароль</label>
+        <input class="login-icon-password"type="password" 
+                name="password" id="password" placeholder="пароль">
       </p>
-      <p>
-        <label>
-          <input type="checkbox" name="remember" checked>
+      <p class="login-password-info">
+        <label class="login-checkbox">
+          <input class="visually-hidden" type="checkbox" name="remember" checked>
           запомнить меня
         </label>
-        <a href="#">я забыл пароль!</a>
+        <a class="restore" href="#">я забыл пароль!</a>
       </p>
 
-      <button type="submit">вход</button>
+      <button class="button" type="submit">Войти</button>
     </form>
-    <button type="button" class="modal-close">закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <section class="modal-map">
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Где нас найти</h2>
-    <button type="button" class="modal-close">закрыть</button>
+    <button type="button" class="modal-close">
+        <span class="visually-hidden">закрыть</span>
+    </button>
   </section>
 </body>
 
