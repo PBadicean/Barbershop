@@ -5,20 +5,20 @@
   <meta charset="utf-8" />
   <title>Borodinsky</title>
   <link rel="stylesheet" href="stylesheets/main.css" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="header-navigation">
       <a href="index.html" class="header-logo">
-        <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+        <img src="./img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
       </a>
       <ul class="app-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">новости</a></li>
         <li><a href="price.html">прайс-лист</a></li>
-        <li><a href="#">магазин</a></li>
+        <li><a class="app-navigation-current">магазин</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
 
@@ -38,7 +38,7 @@
     </ul>
 
     <section class="filters">
-      <h2 class="visually-hidden">фильтр</h2>
+      <h2 class="visually-hidden">Фильтр Товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="GET">
 
         <fieldset>
@@ -51,7 +51,7 @@
               <label for="baxter-of-california">baxter of california</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" 
+              <input class="visually-hidden filter-input filter-input-checkbox"
                      type="checkbox" id="mr-natty" name="mr-natty">
               <label for="mr-natty">mr natty</label>
             </li>
@@ -118,7 +118,7 @@
           </a>
           <p class="catalog-item-price">
             <span>2 900 ₽</span>
-            <a href="#">купить</a>
+            <a class="button" href="#">купить</a>
           </p>
         </li>
 
@@ -144,7 +144,7 @@
           </a>
           <p class="catalog-item-price">
             <span>290 ₽</span>
-            <a href="#">купить</a>
+            <a class="button" href="#">купить</a>
           </p>
         </li>
 
@@ -157,7 +157,7 @@
           </a>
           <p class="catalog-item-price">
             <span>500 ₽</span>
-            <a href="#">купить</a>
+            <a class="button" href="#">купить</a>
           </p>
         </li>
 
@@ -170,7 +170,7 @@
           </a>
           <p class="catalog-item-price">
             <span>300 ₽</span>
-            <a href="#">купить</a>
+            <a class="button" href="#">купить</a>
           </p>
         </li>
 
@@ -183,7 +183,7 @@
           </a>
           <p class="catalog-item-price">
             <span>3 900 ₽</span>
-            <a href="#">купить</a>
+            <a class="button" href="#">купить</a>
           </p>
         </li>
       </ul>
@@ -208,33 +208,33 @@
     <div class="footer-social">
       <b>давайте дружить!</b>
       <ul class="social-list">
-        <li><a href="#" class="social-vk">вконтакте</a></li>
-        <li><a href="#" class="social-fb">фейсбук</a></li>
-        <li><a href="#" class="social-inst">инстаграм</a></li>
+        <li><a href="#" class="social-button">вконтакте</a></li>
+        <li><a href="#" class="social-button">фейсбук</a></li>
+        <li><a href="#" class="social-button">инстаграм</a></li>
       </ul>
     </div>
 
     <p class="footer-copyright">
       <b>Разработано</b>
-      <a href="https://htmlacademy.ru/">html academy</a>
+      <a class="button" href="https://htmlacademy.ru/">html academy</a>
     </p>
   </footer>
 
-  <section class="modal modal-authorization">
+  <section class="modal modal-authentication">
     <h2>Личный кабинет</h2>
     <p class="login-info">
       введите пожалуйста свой логин и пароль
     </p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label class="visually-hidden" for="login">логин</label>
-        <input class="login-icon-user"type="text"
-                name="login" id="login" placeholder="логин">
+        <label class="visually-hidden" for="user-login">логин</label>
+        <input class="login-icon-user" type="text"
+                name="login" id="user-login" placeholder="логин">
       </p>
       <p>
-        <label class="visually-hidden" for="password">пароль</label>
-        <input class="login-icon-password"type="password" 
-                name="password" id="password" placeholder="пароль">
+        <label class="visually-hidden" for="user-password">пароль</label>
+        <input class="login-icon-password" type="password"
+                name="password" id="user-password" placeholder="пароль">
       </p>
       <p class="login-password-info">
         <label class="login-checkbox">
@@ -246,7 +246,9 @@
 
       <button class="button" type="submit">Войти</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">закрыть</span>
+    </button>
   </section>
 
   <section class="modal modal-map">
