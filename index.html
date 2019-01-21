@@ -5,13 +5,13 @@
   <meta charset="utf-8" />
   <title>Borodinsky</title>
   <link rel="stylesheet" href="stylesheets/main.css" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="header-navigation">
-      <a href="#" class="header-logo">
+      <a class="header-logo">
         <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
       </a>
       <ul class="app-navigation">
@@ -82,13 +82,13 @@
           <time datetime="2008-02-14 20:00">18 января</time>
         </li>
       </ul>
-      <a href="#">все новости</a>
+      <a class="button" href="#">все новости</a>
     </section>
 
     <section class="gallery">
       <h2>фотогалерея</h2>
       <figure class="gallery-content">
-        <a href="#"><img src="./img/salon-room.jpg" width="286" height="164" alt="интерьер"></a>
+        <a href="./img/salon-room.jpg"><img src="./img/salon-room.jpg" width="286" height="164" alt="интерьер"></a>
       </figure>
       <button class="button gallery-button-back" type="button">назад</button>
       <button class="button gallery-button-next" type="button">вперед</button>
@@ -153,33 +153,33 @@
     <div class="footer-social">
       <b>давайте дружить!</b>
       <ul class="social-list">
-        <li><a href="#" class="social-vk">вконтакте</a></li>
-        <li><a href="#" class="social-fb">фейсбук</a></li>
-        <li><a href="#" class="social-inst">инстаграм</a></li>
+        <li><a href="#" class="social-button">вконтакте</a></li>
+        <li><a href="#" class="social-button">фейсбук</a></li>
+        <li><a href="#" class="social-button">инстаграм</a></li>
       </ul>
     </div>
 
     <p class="footer-copyright">
       <b>Разработано</b>
-      <a href="https://htmlacademy.ru/">html academy</a>
+      <a class="button" href="https://htmlacademy.ru/">html academy</a>
     </p>
   </footer>
 
-  <section class="modal modal-authorization">
+  <section class="modal modal-authentication">
     <h2>Личный кабинет</h2>
     <p class="login-info">
       введите пожалуйста свой логин и пароль
     </p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label class="visually-hidden" for="login">логин</label>
-        <input class="login-icon-user"type="text"
-               name="login" id="login" placeholder="логин">
+        <label class="visually-hidden" for="user-login">логин</label>
+        <input class="login-icon-user" type="text"
+               name="login" id="user-login" placeholder="логин">
       </p>
       <p>
-        <label class="visually-hidden" for="password">пароль</label>
-        <input class="login-icon-password"type="password" 
-               name="password" id="password" placeholder="пароль">
+        <label class="visually-hidden" for="user-password">пароль</label>
+        <input class="login-icon-password" type="password"
+               name="password" id="user-password" placeholder="пароль">
       </p>
       <p class="login-password-info">
         <label class="login-checkbox">
@@ -191,7 +191,9 @@
 
       <button class="button" type="submit">Войти</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">закрыть</span>
+    </button>
   </section>
 
   <section class="modal modal-map">
