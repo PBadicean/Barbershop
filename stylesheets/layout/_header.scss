@@ -1,0 +1,22 @@
+.page-header {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $black;
+}
+
+.app-navigation,
+.user-navigation {
+  list-style: none;
+
+  a {
+    color: $white;
+  }
+}
+
+
+.app-navigation a:hover,
+.app-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background: #242424;
+}

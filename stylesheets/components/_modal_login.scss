@@ -1,0 +1,21 @@
+.modal-authentication {
+  background: $content-background url("../img/content-background.png") 0 0 repeat;
+  color: $black;
+}
+
+.modal-authentication h2 {
+  font-size: 30px;
+}
+
+.login-password-info a {
+  color: $black;
+  text-decoration: underline;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  color: $black;
+  text-transform: uppercase;
+  border: 2px solid $black;
+  background-color: $input_background;
+}

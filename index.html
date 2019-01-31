@@ -62,84 +62,88 @@
       </ul>
     </section>
 
-    <section class="news">
-      <h2>новости</h2>
+    <div class="index-columns">
+      <section class="news">
+        <h2>новости</h2>
 
-      <ul class="news-list">
-        <li class="news-item">
-          <p>
-            нам наконец завезли ягемастер теперь вы можете
-            пропустить стаканчик во время стрижки
+        <ul class="news-list">
+          <li class="news-item">
+            <p>
+              нам наконец завезли ягемастер теперь вы можете
+              пропустить стаканчик во время стрижки
+            </p>
+            <time datetime="2008-02-14 20:00">11 января</time>
+          </li>
+          <li class="news-item">
+            <p>
+              в нашей команде пополнение, Борис «Бритва» Стригунец,
+              обладатель множества титулов и наград пополнил наши
+              стройные ряды
+            </p>
+            <time datetime="2008-02-14 20:00">18 января</time>
+          </li>
+        </ul>
+        <a class="button" href="#">все новости</a>
+      </section>
+
+      <section class="gallery">
+        <h2>фотогалерея</h2>
+        <figure class="gallery-content">
+          <a href="./img/salon-room.jpg"><img src="./img/salon-room.jpg" width="286" height="164" alt="интерьер"></a>
+        </figure>
+        <button class="button gallery-button-back" type="button">назад</button>
+        <button class="button gallery-button-next" type="button">вперед</button>
+      </section>
+    </div>
+
+    <div class="index-columns">
+      <section class="contacts">
+        <h2>контактная информация</h2>
+        <p class="contacts-info">
+          барбершоп «бородинский»<br>
+          адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+          телефон: +7 (495) 666-02-66
+        </p>
+
+        <p class="working-hours">
+          время работы:<br>
+          пн-пт: с 10:00 до 22:00<br>
+          сб-вс: с 10:00 до 19:00
+        </p>
+
+        <a href="#" class="button">как проехать</a>
+        <a href="#" class="button">обратная связь</a>
+      </section>
+
+      <section class="appointment">
+        <h2>записаться</h2>
+
+        <p class="appointment-info">
+          укажите желаемую дату и время и мы свяжемся
+          с вами для подтверждения брони
+        </p>
+
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label for="date-field">дата</label>
+            <input type="text" name="date" id="date-field" placeholder="08.10.2017">
           </p>
-          <time datetime="2008-02-14 20:00">11 января</time>
-        </li>
-        <li class="news-item">
-          <p>
-            в нашей команде пополнение, Борис «Бритва» Стригунец,
-            обладатель множества титулов и наград пополнил наши
-            стройные ряды
+          <p class="appointment-item">
+            <label for="time-field">время</label>
+            <input type="text" name="time" id="time-field" placeholder="10:00">
           </p>
-          <time datetime="2008-02-14 20:00">18 января</time>
-        </li>
-      </ul>
-      <a class="button" href="#">все новости</a>
-    </section>
-
-    <section class="gallery">
-      <h2>фотогалерея</h2>
-      <figure class="gallery-content">
-        <a href="./img/salon-room.jpg"><img src="./img/salon-room.jpg" width="286" height="164" alt="интерьер"></a>
-      </figure>
-      <button class="button gallery-button-back" type="button">назад</button>
-      <button class="button gallery-button-next" type="button">вперед</button>
-    </section>
-
-    <section class="contacts">
-      <h2>контактная информация</h2>
-      <p class="contacts-info">
-        барбершоп «бородинский»<br>
-        адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
-        телефон: +7 (495) 666-02-66
-      </p>
-
-      <p class="working-hours">
-        время работы:<br>
-        пн-пт: с 10:00 до 22:00<br>
-        сб-вс: с 10:00 до 19:00
-      </p>
-
-      <a href="#" class="button">как проехать</a>
-      <a href="#" class="button">обратная связь</a>
-    </section>
-
-    <section class="appointment">
-      <h2>записаться</h2>
-
-      <p class="appointment-info">
-        укажите желаемую дату и время и мы свяжемся
-        с вами для подтверждения брони
-      </p>
-
-      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appointment-item">
-          <label for="date-field">дата</label>
-          <input type="text" name="date" id="date-field" placeholder="08.10.2017">
-        </p>
-        <p class="appointment-item">
-          <label for="time-field">время</label>
-          <input type="text" name="time" id="time-field" placeholder="10:00">
-        </p>
-        <p class="appointment-item">
-          <label for="name-field">имя</label>
-          <input type="text" name="name" id="name-field" placeholder="Борода">
-        </p>
-        <p class="appointment-item">
-          <label for="phone-field">телефон</label>
-          <input type="tel" name="phone" id="phone-field" placeholder="+7 123 456-78-90">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
+          <p class="appointment-item">
+            <label for="name-field">имя</label>
+            <input type="text" name="name" id="name-field" placeholder="Борода">
+          </p>
+          <p class="appointment-item">
+            <label for="phone-field">телефон</label>
+            <input type="tel" name="phone" id="phone-field" placeholder="+7 123 456-78-90">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
