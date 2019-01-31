@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $white;
+  text-transform: uppercase;
+  font: 700 14px/24px "PT Sans Narrow", Arial, sans-serif;
+  background: $black url("../img/hair-salon.jpeg") 0 0 no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

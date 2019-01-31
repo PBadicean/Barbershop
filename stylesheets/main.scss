@@ -1,1 +1,16 @@
+@import 'utilities/mixins';
+@import 'utilities/variables';
+
 @import 'vendors/normalize';
+@import 'base/base';
+@import 'base/helpers';
+@import 'layout/footer';
+@import 'layout/grids';
+@import 'layout/header';
+@import 'components/advantages';
+@import 'components/button';
+@import 'components/news';
+@import 'components/appointment';
+@import 'components/gallery';
+@import 'components/modal_login';
+@import 'pages/inner';
