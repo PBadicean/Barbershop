@@ -5,17 +5,28 @@
 
 .modal-authentication h2 {
   font-size: 30px;
+  line-height: 42px;
 }
 
-.login-password-info a {
+.restore {
   color: $black;
   text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  color: $black;
+  font: inherit;
   text-transform: uppercase;
-  border: 2px solid $black;
   background-color: $input_background;
+  border: 2px solid $black;
+
+  &:hover,
+  &:focus {
+    border: 2px solid  $on_cursor;
+  }
 }

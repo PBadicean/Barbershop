@@ -1,16 +1,12 @@
 .index-columns {
+  color: $black;
   background:
     url("../img/separator.png") 50% 50% no-repeat,
-    $content-background url("../img/content-background.png") 0 0 repeat;
-  color: $black;
+    url("../img/content-background.png") 0 0 repeat;
+  background-color: $content-background;
 }
 
 .index-columns h2 {
   font-size: 30px;
   line-height: 42px;
-}
-
-.index-columns .button {
-  color: $white;
-  background-color: $black;
 }

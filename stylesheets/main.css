@@ -363,15 +363,34 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  visibility: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type=checkbox].visually-hidden,
+input[type=radio].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-footer {
-  background: #000000 url("../img/footer-background.png") 0 0 repeat;
+  background: #252525 url("../img/footer-background.png") 0 0 repeat;
 }
 
-.page-footer a {
+.footer-contacts a {
+  text-decoration: underline;
+}
+.footer-contacts a:hover, .footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-contacts a,
+.footer-copyright a {
   color: #ffffff;
 }
 
@@ -379,23 +398,15 @@ a {
   list-style: none;
 }
 
-.footer-contacts a {
-  text-decoration: underline;
-}
-
 .index-columns {
-  background: url("../img/separator.png") 50% 50% no-repeat, #fcf9f6 url("../img/content-background.png") 0 0 repeat;
   color: #000000;
+  background: url("../img/separator.png") 50% 50% no-repeat, url("../img/content-background.png") 0 0 repeat;
+  background-color: #fcf9f6;
 }
 
 .index-columns h2 {
   font-size: 30px;
   line-height: 42px;
-}
-
-.index-columns .button {
-  color: #ffffff;
-  background-color: #000000;
 }
 
 .page-header {
@@ -412,12 +423,10 @@ a {
 .user-navigation a {
   color: #ffffff;
 }
-
-.app-navigation a:hover,
-.app-navigation a:focus,
+.app-navigation a:hover, .app-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background: #242424;
+  background-color: #242424;
 }
 
 .advantages-list {
@@ -432,10 +441,26 @@ a {
   line-height: 42px;
 }
 
-.button {
-  background-color: #000000;
+.index-columns .button {
+  font: inherit;
   color: #ffffff;
+  background-color: #000000;
+}
+
+.button {
+  font: inherit;
+  color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
+  background-color: #000000;
+  border: 0;
+}
+.button:hover, .button:focus, .button:active {
+  background-color: #653d15;
+}
+.button:disabled {
+  background-color: #653d15;
+  cursor: not-allowed;
 }
 
 .news-list {
@@ -447,10 +472,17 @@ a {
 }
 
 .appointment-item input {
+  font: inherit;
   background-color: #f9f5f3;
+  border: 2px #000000 solid;
 }
 
-.gallery-content img {
+.appointment-item input:hover,
+.appointment-item input:focus {
+  border: 2px #653d15 solid;
+}
+
+.gallery-content {
   border: 7px solid #ffffff;
 }
 
@@ -461,19 +493,35 @@ a {
 
 .modal-authentication h2 {
   font-size: 30px;
+  line-height: 42px;
 }
 
-.login-password-info a {
+.restore {
   color: #000000;
   text-decoration: underline;
+}
+.restore:hover, .restore:focus {
+  text-decoration: none;
 }
 
 .login-form input[type=text],
 .login-form input[type=password] {
-  color: #000000;
+  font: inherit;
   text-transform: uppercase;
-  border: 2px solid #000000;
   background-color: #f9f5f3;
+  border: 2px solid #000000;
+}
+.login-form input[type=text]:hover, .login-form input[type=text]:focus,
+.login-form input[type=password]:hover,
+.login-form input[type=password]:focus {
+  border: 2px solid #653d15;
+}
+
+.modal-map {
+  width: 768px;
+  height: 560px;
+  border: 7px solid #ffffff;
+  background: url("../img/map.jpg") no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */
