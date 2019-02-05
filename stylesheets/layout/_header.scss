@@ -10,13 +10,10 @@
 
   a {
     color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: #242424;
+    }
   }
-}
-
-
-.app-navigation a:hover,
-.app-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background: #242424;
 }
