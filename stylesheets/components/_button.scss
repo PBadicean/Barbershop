@@ -1,13 +1,8 @@
-.index-columns .button {
-  font: inherit;
-  color: $white;
-  background-color: $black;
-}
-
 .button {
   font: inherit;
   color: $white;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   background-color: $black;
   border: 0;
@@ -19,7 +14,6 @@
   }
 
   &:disabled {
-    background-color: $on_cursor;
     cursor: not-allowed;
   }
 }

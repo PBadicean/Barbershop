@@ -27,6 +27,6 @@
 
   &:hover,
   &:focus {
-    border: 2px solid  $on_cursor;
+    border-color: $on_cursor;
   }
 }

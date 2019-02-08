@@ -441,16 +441,11 @@ input[type=radio].visually-hidden {
   line-height: 42px;
 }
 
-.index-columns .button {
-  font: inherit;
-  color: #ffffff;
-  background-color: #000000;
-}
-
 .button {
   font: inherit;
   color: #ffffff;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   background-color: #000000;
   border: 0;
@@ -459,7 +454,6 @@ input[type=radio].visually-hidden {
   background-color: #653d15;
 }
 .button:disabled {
-  background-color: #653d15;
   cursor: not-allowed;
 }
 
@@ -474,12 +468,12 @@ input[type=radio].visually-hidden {
 .appointment-item input {
   font: inherit;
   background-color: #f9f5f3;
-  border: 2px #000000 solid;
+  border: 2px solid #000000;
 }
 
 .appointment-item input:hover,
 .appointment-item input:focus {
-  border: 2px #653d15 solid;
+  border-color: #653d15;
 }
 
 .gallery-content {
@@ -514,14 +508,14 @@ input[type=radio].visually-hidden {
 .login-form input[type=text]:hover, .login-form input[type=text]:focus,
 .login-form input[type=password]:hover,
 .login-form input[type=password]:focus {
-  border: 2px solid #653d15;
+  border-color: #653d15;
 }
 
 .modal-map {
   width: 768px;
   height: 560px;
   border: 7px solid #ffffff;
-  background: url("../img/map.jpg") no-repeat;
+  background: #d3d3d3 url("../img/map.jpg") no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

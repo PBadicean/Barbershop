@@ -1,10 +1,10 @@
 .appointment-item input {
   font: inherit;
   background-color: $input_background;
-  border: 2px $black solid;
+  border: 2px solid $black;
 }
 
 .appointment-item input:hover,
 .appointment-item input:focus {
-  border: 2px $on_cursor solid;
+  border-color: $on_cursor;
 }
