@@ -389,9 +389,18 @@ input[type=radio].visually-hidden {
   text-decoration: none;
 }
 
-.footer-contacts a,
-.footer-copyright a {
+.footer-contacts a {
   color: #ffffff;
+  text-align: center;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .footer-social ul {
@@ -455,6 +464,7 @@ input[type=radio].visually-hidden {
 }
 .button:disabled {
   cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .news-list {
@@ -470,14 +480,13 @@ input[type=radio].visually-hidden {
   background-color: #f9f5f3;
   border: 2px solid #000000;
 }
-
-.appointment-item input:hover,
-.appointment-item input:focus {
+.appointment-item input:hover, .appointment-item input:focus {
   border-color: #653d15;
 }
 
 .gallery-content {
   border: 7px solid #ffffff;
+  background-color: #d3d3d3;
 }
 
 .modal-authentication {
@@ -511,11 +520,18 @@ input[type=radio].visually-hidden {
   border-color: #653d15;
 }
 
+.login-checkbox {
+  cursor: pointer;
+}
+.login-checkbox:hover, .login-checkbox:focus {
+  border-color: #653d15;
+}
+
 .modal-map {
   width: 768px;
   height: 560px;
   border: 7px solid #ffffff;
-  background: #d3d3d3 url("../img/map.jpg") no-repeat;
+  background: #d3d3d3 url("../img/map.jpg") 50% 50% no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .modal-authentication {
-  background: $content-background url("../img/content-background.png") 0 0 repeat;
+  background: $content_background url("../img/content-background.png") 0 0 repeat;
   color: $black;
 }
 
@@ -28,5 +28,13 @@
   &:hover,
   &:focus {
     border-color: $on_cursor;
+  }
+}
+
+.login-checkbox {
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $on_cursor;
   }
 }
