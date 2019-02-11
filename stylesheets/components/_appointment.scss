@@ -2,9 +2,9 @@
   font: inherit;
   background-color: $input_background;
   border: 2px solid $black;
-}
 
-.appointment-item input:hover,
-.appointment-item input:focus {
-  border-color: $on_cursor;
+  &:hover,
+  &:focus {
+    border-color: $on_cursor;
+  }
 }

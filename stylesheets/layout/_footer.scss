@@ -1,5 +1,5 @@
 .page-footer {
-  background: #252525 url("../img/footer-background.png") 0 0 repeat;
+  background: $footer_background url("../img/footer-background.png") 0 0 repeat;
 }
 
 .footer-contacts a {
@@ -11,9 +11,19 @@
   }
 }
 
-.footer-contacts a,
-.footer-copyright a {
+.footer-contacts a {
   color: $white;
+  text-align: center;
+}
+
+.footer-copyright {
+  text-align: center;
+
+  a:hover,
+  a:focus {
+    color: $black;
+    background-color: $white;
+  }
 }
 
 .footer-social ul {
