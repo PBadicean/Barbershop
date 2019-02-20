@@ -1,0 +1,23 @@
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: $white;
+}
+
+.catalog-item h3 {
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+  color: $black;
+}
+
+.product-category {
+  text-transform: none;
+}
+
+.catalog-item-price span {
+  background-color: #e5e5e5;
+  color: $black;
+}
