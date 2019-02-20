@@ -524,7 +524,7 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 .login-checkbox:hover, .login-checkbox:focus {
-  border-color: #653d15;
+  color: #653d15;
 }
 
 .modal-map {
@@ -532,6 +532,91 @@ input[type=radio].visually-hidden {
   height: 560px;
   border: 7px solid #ffffff;
   background: #d3d3d3 url("../img/map.jpg") 50% 50% no-repeat;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs a {
+  color: #000000;
+  line-height: 20px;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.filters ul,
+.pagination-list {
+  list-style: none;
+}
+
+.filter-option label {
+  color: #000000;
+  line-height: 18px;
+  cursor: pointer;
+}
+.filter-option label:hover, .filter-option label:focus {
+  color: #653d15;
+}
+
+.filter-button {
+  font-size: 13px;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.current-page a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #ffffff;
+}
+
+.catalog-item h3 {
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+  color: #000000;
+}
+
+.product-category {
+  text-transform: none;
+}
+
+.catalog-item-price span {
+  background-color: #e5e5e5;
+  color: #000000;
+}
+
+.inner-page {
+  background: #fcf9f6;
 }
 
 /*# sourceMappingURL=main.css.map */

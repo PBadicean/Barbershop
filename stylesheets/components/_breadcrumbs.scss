@@ -1,0 +1,12 @@
+.breadcrumbs {
+  list-style: none;
+
+  a {
+    color: $black;
+    line-height: 20px;
+  }
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
