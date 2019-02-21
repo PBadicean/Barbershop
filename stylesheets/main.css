@@ -619,19 +619,14 @@ legend {
   list-style: none;
 }
 
-.product-availability, .product-text {
+.product-availability, .product-text, .kit-list {
   color: #000000;
-  line-height: 24px;
 }
 
 .product-article {
-  line-height: 24px;
   color: #aeaeae;
 }
 
-.product-price {
-  line-height: 24px;
-}
 .product-price span {
   background-color: #e5e5e5;
   color: #000000;
@@ -643,9 +638,40 @@ legend {
   color: #000000;
 }
 
-.kit-list {
-  line-height: 24px;
+.promo-title,
+.hair-products h2,
+.hair-products-list,
+.price-services,
+.about-us {
   color: #000000;
+}
+
+.promo-title {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.hair-products h2,
+.about-us h2,
+.price-services h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hair-products-list {
+  list-style: none;
+}
+
+.price-services table,
+.price-services td,
+.price-services tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.price-services table tr td:nth-child(2) {
+  text-align: center;
 }
 
 .inner-page {
