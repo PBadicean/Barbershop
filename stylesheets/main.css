@@ -615,6 +615,39 @@ legend {
   color: #000000;
 }
 
+.product-photo-preview, .kit-list {
+  list-style: none;
+}
+
+.product-availability, .product-text {
+  color: #000000;
+  line-height: 24px;
+}
+
+.product-article {
+  line-height: 24px;
+  color: #aeaeae;
+}
+
+.product-price {
+  line-height: 24px;
+}
+.product-price span {
+  background-color: #e5e5e5;
+  color: #000000;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.kit-list {
+  line-height: 24px;
+  color: #000000;
+}
+
 .inner-page {
   background: #fcf9f6;
 }
