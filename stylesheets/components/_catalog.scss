@@ -4,13 +4,13 @@
 
 .catalog-item {
   background-color: $white;
-}
 
-.catalog-item h3 {
-  display: flex;
-  flex-direction: column;
-  line-height: 18px;
-  color: $black;
+  h3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+    color: $black;
+  }
 }
 
 .product-category {
@@ -18,6 +18,22 @@
 }
 
 .catalog-item-price span {
-  background-color: #e5e5e5;
+  background-color: $price_background;
   color: $black;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  color: $white;
+  background-color: $black;
+
+  &:hover,
+  &:focus {
+    background-color: $on_cursor;
+  }
+}
+
+.current-page a {
+  color: $black;
+  background-color: $white;
 }
