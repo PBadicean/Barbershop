@@ -543,9 +543,13 @@ input[type=radio].visually-hidden {
 .breadcrumbs {
   list-style: none;
 }
+
 .breadcrumbs a {
   color: #000000;
   line-height: 20px;
+}
+.breadcrumbs a:hover, .breadcrumbs a:focus {
+  text-decoration: underline;
 }
 
 .breadcrumbs-current {
@@ -580,15 +584,9 @@ legend {
   font-size: 13px;
 }
 
-.pagination-item a {
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #000000;
-}
-
-.current-page a {
-  color: #000000;
-  background-color: #ffffff;
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #653d15;
 }
 
 .catalog-list {
@@ -598,7 +596,6 @@ legend {
 .catalog-item {
   background-color: #ffffff;
 }
-
 .catalog-item h3 {
   display: flex;
   flex-direction: column;
@@ -615,11 +612,29 @@ legend {
   color: #000000;
 }
 
+.pagination-item a {
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #000000;
+}
+.pagination-item a:hover, .pagination-item a:focus {
+  background-color: #653d15;
+}
+
+.current-page a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .product-photo-preview, .kit-list {
   list-style: none;
 }
 
-.product-availability, .product-text, .kit-list {
+.product-availability,
+.product-text,
+.kit-list,
+.product-price span,
+.product-info h3 {
   color: #000000;
 }
 
@@ -629,13 +644,11 @@ legend {
 
 .product-price span {
   background-color: #e5e5e5;
-  color: #000000;
 }
 
 .product-info h3 {
   font-size: 24px;
   line-height: 30px;
-  color: #000000;
 }
 
 .promo-title,
@@ -666,7 +679,7 @@ legend {
 .price-services table,
 .price-services td,
 .price-services tr {
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-collapse: collapse;
 }
 

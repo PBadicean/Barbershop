@@ -2,21 +2,23 @@
   list-style: none;
 }
 
-.product-availability, .product-text, .kit-list {
+.product-availability,
+.product-text,
+.kit-list,
+.product-price span,
+.product-info h3 {
   color: $black;
 }
 
 .product-article {
-  color: #aeaeae;
+  color: $article_color;
 }
 
 .product-price span{
-  background-color: #e5e5e5;
-  color: $black;
+  background-color: $price_background;
 }
 
 .product-info h3 {
   font-size: 24px;
   line-height: 30px;
-  color: $black;
 }

@@ -28,13 +28,7 @@ legend {
   font-size: 13px;
 }
 
-.pagination-item a {
-  line-height: 18px;
-  color: $white;
-  background-color: $black;
-}
-
-.current-page a {
-  color: $black;
-  background-color: $white;
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: $on_cursor;
 }

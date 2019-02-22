@@ -6,7 +6,6 @@
   color:$black;
 }
 
-
 .promo-title {
   font-size: 48px;
   line-height: 48px;
@@ -27,7 +26,7 @@
 .price-services table,
 .price-services td,
 .price-services tr {
-  border: 1px solid black;
+  border: 1px solid $black;
   border-collapse: collapse;
 }
 
