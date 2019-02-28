@@ -1,10 +1,15 @@
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+  color: $black;
+}
+
 .breadcrumbs {
   list-style: none;
 }
 
 .breadcrumbs a {
   color: $black;
-  line-height: 20px;
 
   &:hover,
   &:focus {
@@ -13,5 +18,5 @@
 }
 
 .breadcrumbs-current {
-  color: $breadcrumbs_color;
+  color: $disabled;
 }

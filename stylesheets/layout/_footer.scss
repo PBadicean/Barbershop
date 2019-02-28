@@ -1,19 +1,16 @@
 .page-footer {
+  color: $white;
   background: $footer_background url("../img/footer-background.png") 0 0 repeat;
 }
 
 .footer-contacts a {
+  color: $white;
   text-decoration: underline;
 
   &:hover,
   &:focus {
     text-decoration: none;
   }
-}
-
-.footer-contacts a {
-  color: $white;
-  text-align: center;
 }
 
 .footer-copyright {
@@ -26,6 +23,10 @@
   }
 }
 
-.footer-social ul {
-  list-style: none;
+.footer-social {
+  text-align: center;
+
+  ul {
+    list-style: none;
+  }
 }
