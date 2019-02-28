@@ -6,9 +6,6 @@
   background-color: $white;
 
   h3 {
-    display: flex;
-    flex-direction: column;
-    line-height: 18px;
     color: $black;
   }
 }
@@ -19,21 +16,5 @@
 
 .catalog-item-price span {
   background-color: $price_background;
-  color: $black;
-}
-
-.pagination-item a {
-  line-height: 18px;
-  color: $white;
-  background-color: $black;
-
-  &:hover,
-  &:focus {
-    background-color: $on_cursor;
-  }
-}
-
-.current-page a {
-  color: $black;
-  background-color: $white;
+  text-align: center;
 }

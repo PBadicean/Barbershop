@@ -1,0 +1,19 @@
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-link {
+  line-height: 18px;
+  color: $white;
+  background-color: $black;
+
+  &:not(.current-link):hover,
+  &:not(.current-link):focus {
+    background-color: $on_cursor;
+  }
+}
+
+.current-link {
+  color: $black;
+  background-color: $white;
+}

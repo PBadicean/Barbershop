@@ -1,20 +1,13 @@
-.product-photo-preview, .kit-list{
+.kit-list{
   list-style: none;
-}
-
-.product-availability,
-.product-text,
-.kit-list,
-.product-price span,
-.product-info h3 {
-  color: $black;
 }
 
 .product-article {
   color: $article_color;
 }
 
-.product-price span{
+.product-price span {
+  text-align: right;
   background-color: $price_background;
 }
 
