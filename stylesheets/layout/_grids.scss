@@ -1,4 +1,7 @@
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
   color: $black;
   background:
     url("../img/separator.png") 50% 50% no-repeat,
@@ -6,7 +9,17 @@
   background-color: $content_background;
 
   h2 {
+    margin: 0;
+    margin-bottom: 25px;
     font-size: 30px;
     line-height: 42px;
   }
+}
+
+.index-columns:first-of-type {
+  margin-bottom: 35px;
+}
+
+.index-columns:last-of-type {
+  margin-bottom: 65px;
 }

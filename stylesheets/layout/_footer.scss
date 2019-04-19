@@ -1,6 +1,18 @@
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
   color: $white;
   background: $footer_background url("../img/footer-background.png") 0 0 repeat;
+}
+
+.page-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 310px;
+  margin: 0;
+  margin-right: 90px;
 }
 
 .footer-contacts a {
@@ -14,6 +26,8 @@
 }
 
 .footer-copyright {
+  width: 140px;
+  margin: 0;
   text-align: center;
 
   a:hover,
@@ -24,9 +38,17 @@
 }
 
 .footer-social {
+  width: 140px;
+  margin: 0;
+  margin-right: 260px;
   text-align: center;
 
   ul {
     list-style: none;
   }
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
 }
