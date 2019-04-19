@@ -1,12 +1,28 @@
+.advantages {
+  margin-bottom: 80px;
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .advantage-item {
+  width: 300px;
   text-align: center;
+}
 
-  h3 {
-    font-size: 30px;
-    line-height: 42px;
-  }
+.advantage-item h3 {
+  margin: 0;
+  padding-bottom: 60px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.advantage-item p {
+  margin: 0;
+  padding: 0 10px;
 }

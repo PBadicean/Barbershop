@@ -348,9 +348,10 @@ html {
 }
 
 body {
-  color: #ffffff;
-  text-transform: uppercase;
+  min-width: 960px;
   font: 700 14px/24px "PT Sans Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
   background: #000000 url("../img/hair-salon.jpeg") 0 0 no-repeat;
 }
 
@@ -370,17 +371,34 @@ input[type=radio].visually-hidden {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
   color: #ffffff;
   background: #252525 url("../img/footer-background.png") 0 0 repeat;
+}
+
+.page-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 310px;
+  margin: 0;
+  margin-right: 90px;
 }
 
 .footer-contacts a {
@@ -392,6 +410,8 @@ input[type=radio].visually-hidden {
 }
 
 .footer-copyright {
+  width: 140px;
+  margin: 0;
   text-align: center;
 }
 .footer-copyright a:hover,
@@ -401,30 +421,76 @@ input[type=radio].visually-hidden {
 }
 
 .footer-social {
+  width: 140px;
+  margin: 0;
+  margin-right: 260px;
   text-align: center;
 }
 .footer-social ul {
   list-style: none;
 }
 
+.social-list {
+  margin: 0;
+  padding: 0;
+}
+
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
   color: #000000;
   background: url("../img/separator.png") 50% 50% no-repeat, url("../img/content-background.png") 0 0 repeat;
   background-color: #fcf9f6;
 }
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 42px;
 }
 
+.index-columns:first-of-type {
+  margin-bottom: 35px;
+}
+
+.index-columns:last-of-type {
+  margin-bottom: 65px;
+}
+
 .page-header {
+  margin-bottom: 80px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  order: 2;
+  width: 368px;
+  height: 153px;
+  align-self: center;
+}
+
+.header-navigation-wrapper {
+  order: 1;
+  padding-bottom: 60px;
   background-color: #000000;
+}
+
+.header-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .app-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .app-navigation a,
@@ -437,16 +503,41 @@ input[type=radio].visually-hidden {
   background-color: #242424;
 }
 
+.app-navigation {
+  width: 545px;
+}
+
+.user-navigation {
+  width: 110px;
+}
+
+.advantages {
+  margin-bottom: 80px;
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .advantage-item {
+  width: 300px;
   text-align: center;
 }
+
 .advantage-item h3 {
+  margin: 0;
+  padding-bottom: 60px;
   font-size: 30px;
   line-height: 42px;
+}
+
+.advantage-item p {
+  margin: 0;
+  padding: 0 10px;
 }
 
 .button {
@@ -466,12 +557,25 @@ input[type=radio].visually-hidden {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.news {
+  width: 300px;
+}
+
 .news-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.news-item {
+  margin: 0;
+  margin-bottom: 25px;
+}
 .news-item time {
   text-transform: none;
+}
+.news-item p {
+  margin: 0;
 }
 
 .appointment-item input {
@@ -483,9 +587,30 @@ input[type=radio].visually-hidden {
   border-color: #653d15;
 }
 
+.index-columns .appointment {
+  width: 300px;
+}
+
+.appointment-info {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
 .gallery-content {
+  height: 178px;
+  margin: 0;
+  margin-bottom: 35px;
   border: 7px solid #ffffff;
   background-color: #d3d3d3;
+}
+
+.gallery {
+  width: 300px;
+}
+
+.buttuns-galery {
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-authentication {
@@ -527,6 +652,7 @@ input[type=radio].visually-hidden {
 }
 
 .modal-map {
+  width: 783px;
   border: 7px solid #ffffff;
   background: #d3d3d3 url("../img/map.jpg") 50% 50% no-repeat;
 }
@@ -667,6 +793,15 @@ legend {
 
 .price-services td:nth-child(2) {
   text-align: center;
+}
+
+.index-columns .contacts {
+  width: 325px;
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .inner-page {
