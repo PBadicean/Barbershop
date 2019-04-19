@@ -349,6 +349,8 @@ html {
 
 body {
   min-width: 960px;
+  margin: 0;
+  padding: 0;
   font: 700 14px/24px "PT Sans Narrow", Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -396,9 +398,9 @@ input[type=radio].visually-hidden {
 }
 
 .footer-contacts {
-  width: 310px;
+  width: 320px;
   margin: 0;
-  margin-right: 90px;
+  margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -410,7 +412,7 @@ input[type=radio].visually-hidden {
 }
 
 .footer-copyright {
-  width: 140px;
+  width: 145px;
   margin: 0;
   text-align: center;
 }
@@ -445,21 +447,19 @@ input[type=radio].visually-hidden {
 }
 .index-columns h2 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 42px;
 }
-
 .index-columns:first-of-type {
   margin-bottom: 35px;
 }
-
 .index-columns:last-of-type {
   margin-bottom: 65px;
 }
 
 .page-header {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -478,13 +478,12 @@ input[type=radio].visually-hidden {
 
 .header-navigation-wrapper {
   order: 1;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   background-color: #000000;
 }
 
 .header-navigation-wrapper .container {
   display: flex;
-  justify-content: space-between;
 }
 
 .app-navigation,
@@ -505,6 +504,7 @@ input[type=radio].visually-hidden {
 
 .app-navigation {
   width: 545px;
+  margin-right: 285px;
 }
 
 .user-navigation {
@@ -593,24 +593,31 @@ input[type=radio].visually-hidden {
 
 .appointment-info {
   margin: 0;
-  margin-bottom: 15px;
-}
-
-.gallery-content {
-  height: 178px;
-  margin: 0;
-  margin-bottom: 35px;
-  border: 7px solid #ffffff;
-  background-color: #d3d3d3;
+  margin-bottom: 10px;
 }
 
 .gallery {
   width: 300px;
 }
 
-.buttuns-galery {
+.gallery-content {
+  height: 178px;
+  margin: 0;
+  background-color: #d3d3d3;
+  border: 7px solid #ffffff;
+}
+.gallery-content a {
+  display: block;
+  width: 286px;
+  height: 164px;
+}
+
+.gallery-buttons {
   display: flex;
   justify-content: space-between;
+}
+.gallery-buttons button {
+  width: 140px;
 }
 
 .modal-authentication {
@@ -652,7 +659,8 @@ input[type=radio].visually-hidden {
 }
 
 .modal-map {
-  width: 783px;
+  width: 766px;
+  height: 560px;
   border: 7px solid #ffffff;
   background: #d3d3d3 url("../img/map.jpg") 50% 50% no-repeat;
 }
