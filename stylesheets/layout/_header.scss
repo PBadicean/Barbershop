@@ -1,5 +1,5 @@
 .page-header {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -18,13 +18,12 @@
 
 .header-navigation-wrapper {
   order: 1;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   background-color: $black;
 }
 
 .header-navigation-wrapper .container {
   display: flex;
-  justify-content: space-between;
 }
 
 .app-navigation,
@@ -45,6 +44,7 @@
 
 .app-navigation {
   width: 545px;
+  margin-right: 285px;
 }
 
 .user-navigation  {

@@ -1,16 +1,25 @@
-.gallery-content {
-  height: 178px;
-  margin: 0;
-  margin-bottom: 35px;
-  border: 7px solid $white;
-  background-color: $gallery_background;
-}
-
 .gallery {
   width: 300px;
 }
 
-.buttuns-galery {
+.gallery-content {
+  height: 178px;
+  margin: 0;
+  background-color: $gallery_background;
+  border: 7px solid $white;
+
+  a {
+    display: block;
+    width: 286px;
+    height: 164px;
+  }
+}
+
+.gallery-buttons {
   display: flex;
   justify-content: space-between;
+
+  button {
+    width: 140px;
+  }
 }

@@ -10,16 +10,16 @@
 
   h2 {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 42px;
   }
-}
 
-.index-columns:first-of-type {
-  margin-bottom: 35px;
-}
+  &:first-of-type {
+    margin-bottom: 35px;
+  }
 
-.index-columns:last-of-type {
-  margin-bottom: 65px;
+  &:last-of-type {
+    margin-bottom: 65px;
+  }
 }
