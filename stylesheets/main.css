@@ -558,7 +558,7 @@ input[type=radio].visually-hidden {
 }
 
 .news {
-  width: 300px;
+  width: 355px;
 }
 
 .news-list {
@@ -659,8 +659,8 @@ input[type=radio].visually-hidden {
 }
 
 .modal-map {
-  width: 766px;
-  height: 560px;
+  width: 780px;
+  height: 574px;
   border: 7px solid #ffffff;
   background: #d3d3d3 url("../img/map.jpg") 50% 50% no-repeat;
 }
