@@ -1,13 +1,39 @@
+.catalog {
+  margin:0;
+  width: 700px;
+  height: 680px;
+  margin-bottom: 90px;
+}
+
 .catalog-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0px;
+  margin:0;
+  margin-bottom: 25px;
+
 }
 
 .catalog-item {
+  width: 220px;
+  height: 300px;;
+  margin: 0;
   background-color: $white;
 
   h3 {
     color: $black;
   }
+}
+
+.catalog-item h3 {
+  margin: 0;
+}
+
+.catalog-item:not(:nth-child(3n+3)) {
+  margin-right: 18px;
+  margin-bottom: 20px;
 }
 
 .product-category {

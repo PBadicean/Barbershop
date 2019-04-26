@@ -458,6 +458,11 @@ input[type=radio].visually-hidden {
   margin-bottom: 65px;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-header {
   margin-bottom: 70px;
   font-size: 16px;
@@ -482,7 +487,7 @@ input[type=radio].visually-hidden {
   background-color: #000000;
 }
 
-.header-navigation-wrapper .container {
+.page-header .container {
   display: flex;
 }
 
@@ -672,6 +677,7 @@ input[type=radio].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
   list-style: none;
 }
 
@@ -686,17 +692,38 @@ input[type=radio].visually-hidden {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.filters {
+  width: 175px;
+  height: 570px;
+}
+
 fieldset {
+  margin: 0;
+  padding: 0;
   border: 0;
+}
+fieldset:first-of-type {
+  margin-bottom: 50px;
+}
+fieldset:last-of-type {
+  margin-bottom: 30px;
 }
 
 legend {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 30px;
 }
 
 .filters ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+.filters ul li {
+  margin-bottom: 15px;
 }
 
 .filter-option label {
@@ -714,15 +741,40 @@ legend {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.catalog {
+  margin: 0;
+  width: 700px;
+  height: 680px;
+  margin-bottom: 90px;
+}
+
 .catalog-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .catalog-item {
+  width: 220px;
+  height: 300px;
+  margin: 0;
   background-color: #ffffff;
 }
 .catalog-item h3 {
   color: #000000;
+}
+
+.catalog-item h3 {
+  margin: 0;
+}
+
+.catalog-item:not(:nth-child(3n+3)) {
+  margin-right: 18px;
+  margin-bottom: 20px;
 }
 
 .product-category {
@@ -815,6 +867,30 @@ legend {
 .inner-page {
   color: #000000;
   background: #fcf9f6 url("../img/content-background.png") 0 0 repeat;
+}
+.inner-page .page-header {
+  margin: 0;
+  margin-bottom: 50px;
+  background-color: #000000;
+}
+.inner-page .header-navigation {
+  flex-direction: row;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.inner-page .header-logo {
+  order: 0;
+  align-self: auto;
+  width: 115px;
+  height: 0;
+  margin-right: 40px;
+}
+.inner-page .app-navigation {
+  width: 510px;
+  margin: 0;
+}
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
