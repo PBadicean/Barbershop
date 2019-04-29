@@ -1,25 +1,15 @@
 .filters {
   width: 175px;
-  height: 570px;
 }
 
 fieldset {
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
   border: 0;
-
-  &:first-of-type {
-    margin-bottom: 50px;
-  }
-
-  &:last-of-type {
-    margin-bottom: 30px;
-  }
 }
 
 legend {
-  margin: 0;
-  padding: 0;
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 30px;
@@ -31,13 +21,16 @@ legend {
   list-style: none;
 
   li {
-    margin-bottom: 15px;
   }
 }
 
-.filter-option label {
-  line-height: 18px;
-  cursor: pointer;
+.filter-option:not(:last-child) {
+  margin-bottom: 15px;
+
+  label {
+    line-height: 18px;
+    cursor: pointer;
+  }
 }
 
 .filter-input:hover + label,

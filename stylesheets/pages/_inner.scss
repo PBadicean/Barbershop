@@ -3,28 +3,20 @@
   background: $content_background url("../img/content-background.png") 0 0 repeat;
 
   .page-header {
-    margin: 0;
     margin-bottom: 50px;
     background-color: $black;
   }
 
   .header-navigation {
+    display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
-    padding-top: 20px;
   }
 
   .header-logo {
     order: 0;
     align-self: auto;
-    width: 115px;
-    height: 0;
-    margin-right: 40px;
-  }
-
-  .app-navigation {
-    width: 510px;
-    margin:0;
+    width: 111px;
+    height: 24px;
   }
 
   .user-navigation {
