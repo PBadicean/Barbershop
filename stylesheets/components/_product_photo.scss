@@ -1,3 +1,20 @@
+.product-photos {
+  width: 460px;
+}
+
 .product-photo-preview {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  li {
+    width: 140px;
+  }
+}
+
+.product-photo-full {
+  margin: 0;
+  margin-bottom: 15px;
 }
