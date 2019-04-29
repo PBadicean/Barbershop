@@ -461,6 +461,7 @@ input[type=radio].visually-hidden {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 45px;
 }
 
 .page-header {
@@ -487,7 +488,7 @@ input[type=radio].visually-hidden {
   background-color: #000000;
 }
 
-.page-header .container {
+.header-navigation-wrapper .container {
   display: flex;
 }
 
@@ -694,24 +695,16 @@ input[type=radio].visually-hidden {
 
 .filters {
   width: 175px;
-  height: 570px;
 }
 
 fieldset {
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
   border: 0;
 }
-fieldset:first-of-type {
-  margin-bottom: 50px;
-}
-fieldset:last-of-type {
-  margin-bottom: 30px;
-}
 
 legend {
-  margin: 0;
-  padding: 0;
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 30px;
@@ -722,11 +715,10 @@ legend {
   padding: 0;
   list-style: none;
 }
-.filters ul li {
+.filter-option:not(:last-child) {
   margin-bottom: 15px;
 }
-
-.filter-option label {
+.filter-option:not(:last-child) label {
   line-height: 18px;
   cursor: pointer;
 }
@@ -742,10 +734,8 @@ legend {
 }
 
 .catalog {
-  margin: 0;
   width: 700px;
-  height: 680px;
-  margin-bottom: 90px;
+  margin-bottom: 45px;
 }
 
 .catalog-list {
@@ -755,13 +745,12 @@ legend {
   list-style: none;
   padding: 0px;
   margin: 0;
-  margin-bottom: 25px;
 }
 
 .catalog-item {
   width: 220px;
-  height: 300px;
   margin: 0;
+  margin-bottom: 20px;
   background-color: #ffffff;
 }
 .catalog-item h3 {
@@ -773,8 +762,7 @@ legend {
 }
 
 .catalog-item:not(:nth-child(3n+3)) {
-  margin-right: 18px;
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .product-category {
@@ -869,25 +857,18 @@ legend {
   background: #fcf9f6 url("../img/content-background.png") 0 0 repeat;
 }
 .inner-page .page-header {
-  margin: 0;
   margin-bottom: 50px;
   background-color: #000000;
 }
 .inner-page .header-navigation {
+  display: flex;
   flex-direction: row;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 .inner-page .header-logo {
   order: 0;
   align-self: auto;
-  width: 115px;
-  height: 0;
-  margin-right: 40px;
-}
-.inner-page .app-navigation {
-  width: 510px;
-  margin: 0;
+  width: 111px;
+  height: 24px;
 }
 .inner-page .user-navigation {
   margin-left: auto;
