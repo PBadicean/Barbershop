@@ -1,4 +1,17 @@
-.kit-list{
+.product-info {
+  width: 390px;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.kit-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -6,12 +19,23 @@
   color: $article_color;
 }
 
-.product-price span {
-  text-align: right;
-  background-color: $price_background;
+.product-description {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 20px;
 }
 
-.product-info h3 {
-  font-size: 24px;
-  line-height: 30px;
+.product-text {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.product-price {
+  margin: 0;
+  margin-bottom: 65px;
+
+  span {
+    text-align: right;
+    background-color: $price_background;
+  }
 }
