@@ -23,11 +23,11 @@ legend {
 
 .filter-option:not(:last-child) {
   margin-bottom: 15px;
+}
 
-  label {
-    line-height: 18px;
-    cursor: pointer;
-  }
+.filter-option label {
+  line-height: 18px;
+  cursor: pointer;
 }
 
 .filter-input:hover + label,
