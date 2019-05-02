@@ -1,0 +1,19 @@
+.price-services {
+  width: 465px;
+
+  h2 {
+    margin-bottom: 35px;
+  }
+}
+
+.price-services table {
+  border-collapse: collapse;
+}
+
+.price-services td {
+  border: 1px solid $black;
+}
+
+.price-services td:nth-child(2) {
+  text-align: center;
+}

@@ -476,6 +476,11 @@ input[type=radio].visually-hidden {
   justify-content: space-between;
   margin-bottom: 80px;
 }
+.price-columns h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
 
 .page-header {
   margin-bottom: 70px;
@@ -861,31 +866,39 @@ legend {
 }
 .product-photo-preview li {
   width: 140px;
-  height: 150px;
+  height: 149px;
 }
 
 .product-photo-full {
   width: 460px;
-  height: 500px;
+  height: 498px;
   margin: 0;
   margin-bottom: 15px;
 }
 
-.promo-title {
-  margin: 0;
-  margin-bottom: 60px;
-  padding-top: 40px;
-  font-size: 48px;
-  line-height: 48px;
-  text-align: center;
+.index-columns .contacts {
+  width: 325px;
 }
 
-.hair-products h2,
-.about-us h2,
-.price-services h2 {
+.contacts p {
   margin: 0;
-  font-size: 24px;
-  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.about-us {
+  width: 860px;
+}
+.about-us h2 {
+  margin-bottom: 30px;
+}
+.about-us p {
+  margin: 0;
+  width: 385px;
+}
+
+.about-us-description {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hair-products {
@@ -896,37 +909,20 @@ legend {
   margin-bottom: 30px;
 }
 
-.price-services {
-  width: 465px;
-}
-.price-services h2 {
-  margin-bottom: 35px;
-  padding-right: 250px;
-}
-
-.about-us {
-  display: flex;
-  flex-wrap: wrap;
-}
-.about-us p {
-  margin: 0;
-  width: 385px;
-}
-.about-us p:first-of-type {
-  margin-right: 95px;
-}
-.about-us h2 {
-  width: 940px;
-  margin-bottom: 30px;
-}
-
 .hair-products-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.hair-products-list li {
+.hair-products-list li:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.price-services {
+  width: 465px;
+}
+.price-services h2 {
+  margin-bottom: 35px;
 }
 
 .price-services table {
@@ -941,13 +937,12 @@ legend {
   text-align: center;
 }
 
-.index-columns .contacts {
-  width: 325px;
-}
-
-.contacts p {
+.promo-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
 }
 
 .inner-page {
