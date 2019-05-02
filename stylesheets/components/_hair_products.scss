@@ -1,0 +1,18 @@
+.hair-products {
+  width: 240px;
+  margin-bottom: 65px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.hair-products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
