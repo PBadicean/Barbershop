@@ -34,6 +34,8 @@
 
   a {
     color: $white;
+    display: block;
+    padding: 25px 20px;
 
     &:hover,
     &:focus {
@@ -43,10 +45,38 @@
 }
 
 .app-navigation {
+  display: flex;
   width: 545px;
-  margin-right: 285px;
 }
 
 .user-navigation  {
+  display: flex;
   width: 110px;
+  margin-left: auto;
+
+  a {
+    padding-left: 50px;
+    position: relative;
+  }
+}
+
+.user-navigation a::before {
+  content: "";
+  position: absolute;
+
+  top: 27px;
+  left: 25px;
+
+  width: 16px;
+  height: 16px;
+
+  background: url("../img/login.svg") no-repeat 0 0;
+
+  opacity: 0.5;
+}
+
+.user-navigation a:hover::before,
+.user-navigation a:focus::before,
+.user-navigation a:active::before {
+  opacity: 1;
 }

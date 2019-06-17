@@ -14,16 +14,39 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  li {
+    margin-left: 20px;
+    position: relative;
+  }
+}
+
+.kit-list li::before {
+  content: "";
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  left: -20px;
+  top: 10px;
+
+  background-color: $black;
+
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .product-article {
   text-align: right;
   color: $article_color;
+
 }
 
 .product-description {
   margin: 0;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-text {
@@ -32,10 +55,13 @@
 }
 
 .product-price {
+  display: flex;
   margin: 0;
   margin-bottom: 65px;
 
   span {
+    width: 110px;
+    padding-top: 10px;
     text-align: center;
     background-color: $price_background;
   }

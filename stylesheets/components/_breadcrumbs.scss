@@ -6,6 +6,10 @@
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
   list-style: none;
 }
 
@@ -20,4 +24,24 @@
 
 .breadcrumbs-current {
   color: $disabled;
+}
+
+.breadcrumbs li:not(:last-child) {
+  padding-right: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    right: 15px;
+    top: 50%;
+
+    background-color: $black;
+
+    transform: translateY(-50%) rotate(45deg);
+  }
 }
