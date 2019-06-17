@@ -10,7 +10,7 @@
   list-style: none;
   padding: 0px;
   margin:0;
-
+  margin-bottom: 40px;
 }
 
 .catalog-item {
@@ -18,9 +18,14 @@
   margin: 0;
   margin-bottom: 20px;
   background-color: $white;
+  box-shadow: 0 0 15px rgba(0,1,1,0.2);
 
   h3 {
     color: $black;
+  }
+
+  &:hover {
+    box-shadow: 2.5px 4.33px 25px rgba(0,1,1,0.3);
   }
 }
 
@@ -39,4 +44,36 @@
 .catalog-item-price span {
   background-color: $price_background;
   text-align: center;
+  width: 110px;
+  padding-top: 5px;
+}
+
+.catalog-item-price {
+  margin: 0;
+  margin-left: 15px;
+  display: flex;
+  margin-bottom: 20px;
+
+  a {
+    line-height: 18px;
+    padding: 0;
+    padding: 10px 15px;
+  }
+}
+
+.catalog-item a {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    margin: 0;
+    margin: 15px;
+  }
+
+  .catalog-item-image {
+    margin: 0;
+  }
 }

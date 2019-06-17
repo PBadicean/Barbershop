@@ -12,7 +12,26 @@
   padding: 0;
   list-style: none;
 
+  li {
+    margin-left: 20px;
+    position: relative;
+  }
+
   li:not(:last-child) {
     margin-bottom: 15px;
   }
+}
+.hair-products-list li::before {
+  content: "";
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  left: -20px;
+  top: 10px;
+
+  background-color: $black;
+
+  transform: translateY(-50%) rotate(45deg);
 }

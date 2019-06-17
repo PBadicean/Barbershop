@@ -1,7 +1,28 @@
 .promo-title {
+  display: flex;
+  align-items: center;
   margin: 0;
   margin-bottom: 60px;
   font-size: 48px;
   line-height: 48px;
-  text-align: center;
+}
+
+.promo-title::before,
+.promo-title::after {
+  content: "";
+
+  width: 50px;
+  height: 2px;
+
+  flex-grow: 1;
+
+  background: $black;
+}
+
+.promo-title::before {
+  margin-right: 25px;
+}
+
+.promo-title::after {
+  margin-left: 25px;
 }
