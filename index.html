@@ -33,7 +33,7 @@
             </ul>
 
             <ul class="user-navigation">
-              <li><a href="#">вход</a></li>
+              <li><a href="#" class="login-link">вход</a></li>
             </ul>
           </div>
         </div>
@@ -148,42 +148,46 @@
             action="https://echo.htmlacademy.ru"
             method="post"
           >
-            <p class="appointment-item">
-              <label for="date-field">дата</label>
-              <input
-                type="text"
-                name="date"
-                id="date-field"
-                placeholder="08.10.2017"
-              />
-            </p>
-            <p class="appointment-item">
-              <label for="time-field">время</label>
-              <input
-                type="text"
-                name="time"
-                id="time-field"
-                placeholder="10:00"
-              />
-            </p>
-            <p class="appointment-item">
-              <label for="name-field">имя</label>
-              <input
-                type="text"
-                name="name"
-                id="name-field"
-                placeholder="Борода"
-              />
-            </p>
-            <p class="appointment-item">
-              <label for="phone-field">телефон</label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone-field"
-                placeholder="+7 123 456-78-90"
-              />
-            </p>
+            <div class="apponiment-form-item">
+              <p class="appointment-item">
+                <label for="date-field">дата</label>
+                <input
+                  type="text"
+                  name="date"
+                  id="date-field"
+                  placeholder="08.10.2017"
+                />
+              </p>
+              <p class="appointment-item">
+                <label for="time-field">время</label>
+                <input
+                  type="text"
+                  name="time"
+                  id="time-field"
+                  placeholder="10:00"
+                />
+              </p>
+            </div>
+            <div class="apponiment-form-item">
+              <p class="appointment-item">
+                <label for="name-field">ваше имя</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name-field"
+                  placeholder="Борода"
+                />
+              </p>
+              <p class="appointment-item">
+                <label for="phone-field">телефон</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone-field"
+                  placeholder="+7 123 456-78-90"
+                />
+              </p>
+            </div>
             <button class="button" type="submit">Отправить</button>
           </form>
         </section>
