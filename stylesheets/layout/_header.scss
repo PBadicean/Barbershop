@@ -54,29 +54,29 @@
   width: 110px;
   margin-left: auto;
 
-  a {
-    padding-left: 50px;
+  .login-link {
+    padding-left: 55px;
     position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 27px;
+      left: 24px;
+
+      width: 20px;
+      height: 20px;
+
+      background: url("../img/login.svg") no-repeat 0 0;
+
+      opacity: 0.5;
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      opacity: 1;
+    }
   }
-}
-
-.user-navigation a::before {
-  content: "";
-  position: absolute;
-
-  top: 27px;
-  left: 25px;
-
-  width: 16px;
-  height: 16px;
-
-  background: url("../img/login.svg") no-repeat 0 0;
-
-  opacity: 0.5;
-}
-
-.user-navigation a:hover::before,
-.user-navigation a:focus::before,
-.user-navigation a:active::before {
-  opacity: 1;
 }

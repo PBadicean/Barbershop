@@ -2,6 +2,7 @@
   font-size: 30px;
   line-height: 42px;
   color: $black;
+  margin-bottom: 15px;
 }
 
 .breadcrumbs {
@@ -26,19 +27,17 @@
   color: $disabled;
 }
 
-.breadcrumbs li:not(:last-child) {
-  padding-right: 40px;
+.breadcrumbs li:not(.breadcrumbs-current) {
+  padding-right: 45px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-
-    width: 10px;
-    height: 10px;
-
-    right: 15px;
+    right: 18.5px;
     top: 50%;
+    width: 8px;
+    height: 8px;
 
     background-color: $black;
 

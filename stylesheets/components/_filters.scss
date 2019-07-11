@@ -25,34 +25,16 @@ legend {
   margin-bottom: 15px;
 }
 
-.producers-list .filter-option label {
-    display: block;
-    line-height: 18px;
-    cursor: pointer;
-    padding-left: 40px;
-    padding-top: 2px;
-    position: relative;
-
-   &::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
-  }
-}
-
-.product-groups .filter-option label {
+.filter-input-checkbox + label,
+.filter-input-radio + label {
   display: block;
   line-height: 18px;
   cursor: pointer;
-  padding-left: 40px;
+  padding-left: 43px;
   padding-top: 2px;
   position: relative;
 
-  &::before {
+  &::before{
     content: "";
     position: absolute;
     left: 0;
@@ -60,14 +42,18 @@ legend {
     width: 20px;
     height: 20px;
     border: 2px solid black;
-    border-radius: 15px;
     background-color: transparent;
-    box-shadow: inset 0 0 0 4px #f9f5f3;
   }
+}
+
+.filter-input-radio + label::before {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #f9f5f3;
 }
 
 .filter-input-radio:checked + label::before {
   background-color: black;
+  box-shadow: inset 0 0 0 4px #f9f5f3;
 }
 
 .filter-input:hover + label,
@@ -85,5 +71,6 @@ legend {
 }
 
 .filter-input-checkbox:disabled + label::before {
+  cursor: not-allowed;
   opacity: 0.5;
 }

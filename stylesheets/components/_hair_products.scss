@@ -13,7 +13,7 @@
   list-style: none;
 
   li {
-    margin-left: 20px;
+    padding-left: 20px;
     position: relative;
   }
 
@@ -24,14 +24,10 @@
 .hair-products-list li::before {
   content: "";
   position: absolute;
-
-  width: 7px;
-  height: 7px;
-
-  left: -20px;
-  top: 10px;
-
+  left: 2px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
   background-color: $black;
-
   transform: translateY(-50%) rotate(45deg);
 }

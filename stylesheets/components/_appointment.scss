@@ -1,4 +1,6 @@
 .appointment-item input {
+  width: 140px;
+  padding: 7px 15px;
   font: inherit;
   background-color: $input_background;
   border: 2px solid $black;
@@ -9,7 +11,7 @@
   }
 }
 
-.index-columns .appointment{
+.appointment {
   width: 300px;
 }
 
@@ -18,19 +20,30 @@
   margin-bottom: 15px;
 }
 
+.apponiment-form-item {
+  display: flex;
+  justify-content: space-between;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
 .appointment-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
+
+.apponiment-form-item
 
 .appointment-item {
-  width: 150px;
+  width: 140px;
   margin: 0;
   margin-bottom: 10px;
-}
 
-.appointment .button {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
+  label {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 7px;
+  }
 }
