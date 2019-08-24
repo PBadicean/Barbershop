@@ -501,6 +501,7 @@ input[type=radio].visually-hidden {
 }
 
 .header-navigation-wrapper {
+  width: 100%;
   order: 1;
   margin-bottom: 60px;
   background-color: #000000;
@@ -530,11 +531,26 @@ input[type=radio].visually-hidden {
 
 .app-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 545px;
+}
+
+.app-navigation-current {
+  position: relative;
+}
+.app-navigation-current::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  background-color: #ffffff;
 }
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 110px;
   margin-left: auto;
 }
@@ -547,10 +563,10 @@ input[type=radio].visually-hidden {
   position: absolute;
   top: 27px;
   left: 24px;
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background: url("../img/login.svg") no-repeat 0 0;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .user-navigation .login-link:hover::before, .user-navigation .login-link:focus::before, .user-navigation .login-link:active::before {
   opacity: 1;
@@ -645,12 +661,13 @@ input[type=radio].visually-hidden {
   margin-bottom: 15px;
 }
 
-.apponiment-form-item {
+.apponiment-form-group {
   display: flex;
   justify-content: space-between;
-}
-.apponiment-form-item:last-of-type {
   margin-bottom: 10px;
+}
+.apponiment-form-group:last-of-type {
+  margin-bottom: 20px;
 }
 
 .appointment-form {
@@ -658,12 +675,11 @@ input[type=radio].visually-hidden {
   flex-direction: column;
 }
 
-.apponiment-form-item .appointment-item {
+.appointment-item {
   width: 140px;
   margin: 0;
-  margin-bottom: 10px;
 }
-.apponiment-form-item .appointment-item label {
+.appointment-item label {
   display: block;
   margin-left: 15px;
   margin-bottom: 7px;
@@ -676,7 +692,7 @@ input[type=radio].visually-hidden {
 .gallery-content {
   height: 178px;
   margin: 0;
-  background-color: #d3d3d3;
+  background-color: lightgray;
   border: 7px solid #ffffff;
 }
 .gallery-content a {
@@ -735,7 +751,7 @@ input[type=radio].visually-hidden {
   width: 780px;
   height: 574px;
   border: 7px solid #ffffff;
-  background: #d3d3d3 url("../img/map.jpg") 50% 50% no-repeat;
+  background: lightgray url("../img/map.jpg") 50% 50% no-repeat;
 }
 
 .modal {
@@ -743,10 +759,11 @@ input[type=radio].visually-hidden {
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #000000;
   font-size: 30px;
   line-height: 42px;
-  color: #000000;
-  margin-bottom: 15px;
 }
 
 .breadcrumbs {
@@ -781,26 +798,23 @@ input[type=radio].visually-hidden {
   width: 8px;
   height: 8px;
   background-color: #000000;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translate(50%, -50%) rotate(45deg);
 }
 
 .filters {
   width: 175px;
 }
-
-fieldset {
+.filters fieldset {
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
   border: 0;
 }
-
-legend {
+.filters legend {
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 30px;
 }
-
 .filters ul {
   margin: 0;
   padding: 0;
@@ -809,6 +823,15 @@ legend {
 
 .filter-option:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.filter-input:hover + label, .filter-input:focus + label {
+  color: #653d15;
+}
+.filter-input:disabled + label {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.3;
 }
 
 .filter-input-checkbox + label,
@@ -828,7 +851,7 @@ legend {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   background-color: transparent;
 }
 
@@ -836,29 +859,12 @@ legend {
   border-radius: 50%;
   box-shadow: inset 0 0 0 4px #f9f5f3;
 }
-
 .filter-input-radio:checked + label::before {
-  background-color: black;
-  box-shadow: inset 0 0 0 4px #f9f5f3;
-}
-
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #653d15;
-}
-
-.filter-input:disabled + label {
-  cursor: not-allowed;
-  color: rgba(0, 0, 0, 0.5);
+  background-color: #000000;
 }
 
 .filter-input-checkbox:checked + label::before {
   background: url("../img/cross.svg") 50% 50% no-repeat;
-}
-
-.filter-input-checkbox:disabled + label::before {
-  cursor: not-allowed;
-  opacity: 0.5;
 }
 
 .catalog {
@@ -871,9 +877,9 @@ legend {
   grid-template-columns: repeat(3, 220px);
   grid-gap: 20px;
   list-style: none;
-  padding: 0px;
+  padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .catalog-item {
@@ -882,15 +888,8 @@ legend {
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
-.catalog-item h3 {
-  color: #000000;
-  margin: 0;
-}
 .catalog-item:hover {
   box-shadow: 2.5px 4.33px 25px rgba(0, 1, 1, 0.3);
-}
-.catalog-item:not(:nth-child(3n+3)) {
-  margin-right: 20px;
 }
 
 .product-category {
@@ -900,25 +899,20 @@ legend {
 .catalog-item-price {
   display: flex;
   margin: 0;
-  margin-left: 15px;
-  margin-bottom: 20px;
-  line-height: 18px;
-}
-.catalog-item-price a {
-  padding: 0;
-  padding: 10px 15px;
+  margin: 0 15px 15px;
 }
 .catalog-item-price span {
-  background-color: #e5e5e5;
-  text-align: center;
   width: 110px;
-  padding-top: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e5e5e5;
 }
 
 .catalog-item a:first-child {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  color: black;
 }
 .catalog-item a:first-child h3 {
   display: flex;
@@ -932,7 +926,7 @@ legend {
   margin: 0;
   width: 220px;
   height: 165px;
-  background-color: #d3d3d3;
+  background-color: lightgray;
 }
 
 .pagination-list {
@@ -952,12 +946,12 @@ legend {
 
 .pagination-link {
   display: block;
-  padding: 15px 20px;
+  padding: 10px 20px;
   line-height: 18px;
   color: #ffffff;
   background-color: #000000;
 }
-.pagination-link:not(.current-link):hover, .pagination-link:not(.current-link):focus {
+.pagination-link:not(.current-link):hover, .pagination-link:not(.current-link):focus, .pagination-link:not(.current-link):active {
   background-color: #653d15;
 }
 
@@ -1113,21 +1107,19 @@ legend {
   width: 465px;
 }
 .price-services h2 {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .price-services table {
+  width: 100%;
   border-collapse: collapse;
 }
 .price-services td {
   width: 50%;
-  padding: 10px 15px;
+  padding: 8px 16px;
   border: 2px solid #000000;
 }
 .price-services td:nth-child(2) {
   text-align: center;
-}
-.price-services td .price-services table {
-  width: 100%;
 }
 
 .promo-title {
@@ -1142,7 +1134,7 @@ legend {
 .promo-title::before,
 .promo-title::after {
   content: "";
-  width: 50px;
+  width: 160px;
   height: 2px;
   flex-grow: 1;
   background: #000000;
@@ -1171,7 +1163,7 @@ legend {
 .inner-page .header-logo {
   padding-top: 20px;
   order: 0;
-  align-self: auto;
+  align-self: flex-start;
   width: 111px;
   height: 24px;
 }

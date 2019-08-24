@@ -1,8 +1,9 @@
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: $black;
   font-size: 30px;
   line-height: 42px;
-  color: $black;
-  margin-bottom: 15px;
 }
 
 .breadcrumbs {
@@ -41,6 +42,6 @@
 
     background-color: $black;
 
-    transform: translateY(-50%) rotate(45deg);
+    transform: translate(50%, -50%) rotate(45deg);
   }
 }

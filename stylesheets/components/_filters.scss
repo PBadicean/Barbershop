@@ -1,28 +1,41 @@
 .filters {
   width: 175px;
-}
 
-fieldset {
-  margin: 0;
-  margin-bottom: 50px;
-  padding: 0;
-  border: 0;
-}
+  fieldset {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    border: 0;
+  }
 
-legend {
-  margin-bottom: 30px;
-  font-size: 24px;
-  line-height: 30px;
-}
+  legend {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 
-.filters ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .filter-option:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.filter-input {
+  &:hover + label,
+  &:focus + label {
+    color: $on_cursor;
+  }
+
+  &:disabled + label {
+    cursor: not-allowed;
+    color: $disabled;
+    opacity: 0.3;
+  }
 }
 
 .filter-input-checkbox + label,
@@ -41,36 +54,24 @@ legend {
     top: 0;
     width: 20px;
     height: 20px;
-    border: 2px solid black;
+    border: 2px solid $black;
     background-color: transparent;
   }
 }
 
-.filter-input-radio + label::before {
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 4px #f9f5f3;
+.filter-input-radio {
+  & + label::before {
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px #f9f5f3;
+  }
+
+  &:checked + label::before {
+    background-color: $black;
+  }
 }
 
-.filter-input-radio:checked + label::before {
-  background-color: black;
-  box-shadow: inset 0 0 0 4px #f9f5f3;
-}
-
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: $on_cursor;
-}
-
-.filter-input:disabled + label {
-  cursor: not-allowed;
-  color: $disabled;
-}
-
-.filter-input-checkbox:checked + label::before {
-  background: url('../img/cross.svg') 50% 50% no-repeat;
-}
-
-.filter-input-checkbox:disabled + label::before {
-  cursor: not-allowed;
-  opacity: 0.5;
+.filter-input-checkbox {
+  &:checked + label::before {
+    background: url('../img/cross.svg') 50% 50% no-repeat;
+  }
 }
