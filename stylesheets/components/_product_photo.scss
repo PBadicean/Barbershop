@@ -12,7 +12,7 @@
   li {
     width: 140px;
     height: 149px;
-    box-shadow: $product_photo_shadow;
+    box-shadow: 0 0 15px $product_photo_shadow;
   }
 }
 
@@ -21,5 +21,5 @@
   height: 498px;
   margin: 0;
   margin-bottom: 15px;
-  box-shadow: $product_photo_shadow;
+  box-shadow: 0 0 15px $product_photo_shadow;
 }

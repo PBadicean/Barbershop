@@ -16,13 +16,14 @@
 
 .pagination-link {
   display: block;
-  padding: 15px 20px;
+  padding: 10px 20px;
   line-height: 18px;
   color: $white;
   background-color: $black;
 
   &:not(.current-link):hover,
-  &:not(.current-link):focus {
+  &:not(.current-link):focus,
+  &:not(.current-link):active {
     background-color: $on_cursor;
   }
 }

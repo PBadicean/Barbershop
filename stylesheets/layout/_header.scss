@@ -17,6 +17,7 @@
 }
 
 .header-navigation-wrapper {
+  width: 100%;
   order: 1;
   margin-bottom: 60px;
   background-color: $black;
@@ -46,11 +47,28 @@
 
 .app-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 545px;
+}
+
+.app-navigation-current {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+
+    background-color: $white;
+  }
 }
 
 .user-navigation  {
   display: flex;
+  flex-wrap: wrap;
   width: 110px;
   margin-left: auto;
 
@@ -65,12 +83,12 @@
       top: 27px;
       left: 24px;
 
-      width: 20px;
-      height: 20px;
+      width: 14px;
+      height: 14px;
 
       background: url("../img/login.svg") no-repeat 0 0;
 
-      opacity: 0.5;
+      opacity: 0.3;
     }
 
     &:hover::before,
