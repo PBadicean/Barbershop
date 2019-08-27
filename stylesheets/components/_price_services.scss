@@ -15,7 +15,7 @@
     padding: 8px 16px;
     border: 2px solid $black;
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       text-align: center;
     }
   }
