@@ -869,7 +869,6 @@ input[type=radio].visually-hidden {
 
 .catalog {
   width: 700px;
-  margin-bottom: 45px;
 }
 
 .catalog-list {
@@ -900,6 +899,7 @@ input[type=radio].visually-hidden {
   display: flex;
   margin: 0;
   margin: 0 15px 15px;
+  line-height: 18px;
 }
 .catalog-item-price span {
   width: 110px;
@@ -948,7 +948,6 @@ input[type=radio].visually-hidden {
 .pagination-link {
   display: block;
   padding: 10px 20px;
-  line-height: 18px;
   color: white;
   background-color: black;
 }
