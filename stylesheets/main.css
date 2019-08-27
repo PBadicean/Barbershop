@@ -966,7 +966,7 @@ input[type=radio].visually-hidden {
 }
 .product-info h3 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1076,7 +1076,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 65px;
 }
 .hair-products h2 {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .hair-products-list {
@@ -1118,7 +1118,7 @@ input[type=radio].visually-hidden {
   padding: 8px 16px;
   border: 2px solid black;
 }
-.price-services td:nth-child(2) {
+.price-services td:nth-child(2n) {
   text-align: center;
 }
 
