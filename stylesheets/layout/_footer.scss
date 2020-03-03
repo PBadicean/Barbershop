@@ -26,8 +26,9 @@
 }
 
 .footer-copyright {
-  width: 145px;
+  width: 150px;
   margin: 0;
+  margin-left: auto;
   text-align: center;
 
   a:hover,
@@ -35,16 +36,58 @@
     color: $black;
     background-color: $white;
   }
+
+  .button {
+    display: block;
+    margin-right: 0;
+  }
+
+  b {
+    display: block;
+    margin-bottom: 15px;
+  }
 }
 
 .footer-social {
-  width: 140px;
+  width: 145px;
   margin: 0;
   margin-right: 260px;
   text-align: center;
 
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+
+    margin: 0 0;
+    padding: 0;
     list-style: none;
+  }
+
+  b {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+
+  background-color: $black;
+
+  &:hover,
+  &:focus {
+    background-color: $white
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $black
   }
 }
 
